@@ -44,6 +44,10 @@ body {
     overflow-x: hidden;
 }
 
+body.lock-scroll {
+    overflow: hidden;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -217,6 +221,19 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
+    z-index: 1100;
+    padding: 0.9rem;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.08);
+    transition: var(--transition);
+}
+
+.hamburger:hover,
+.hamburger:focus-visible {
+    transform: translateY(-1px);
+    background: rgba(255, 255, 255, 0.14);
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 217, 255, 0.12);
 }
 
 .bar {
@@ -224,6 +241,19 @@ h1, h2, h3, h4, h5, h6 {
     height: 3px;
     background: var(--color-light);
     transition: var(--transition);
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 /* ========================================
@@ -1067,16 +1097,32 @@ h1, h2, h3, h4, h5, h6 {
         top: 70px;
         left: -100%;
         width: 100%;
+        height: calc(100vh - 70px);
         background: var(--color-darker);
         flex-direction: column;
-        padding: 2rem;
+        padding: 2rem 1.5rem;
         gap: 1.5rem;
         transition: var(--transition);
         box-shadow: var(--shadow-lg);
+        overflow-y: auto;
     }
     
     .nav-menu.active {
         left: 0;
+    }
+
+    .nav-menu li {
+        width: 100%;
+    }
+
+    .nav-link,
+    .btn-donate {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .btn-donate {
+        padding: 12px 15px;
     }
     
     .donation-content,
@@ -1092,6 +1138,30 @@ h1, h2, h3, h4, h5, h6 {
     
     .hero-stats {
         gap: 2rem;
+    }
+
+    .section {
+        padding: 80px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 90px;
+    }
+
+    .donation-content,
+    .contact-content {
+        gap: 1.5rem;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form input,
+    .newsletter-form .btn {
+        width: 100%;
     }
 }
 
@@ -1116,6 +1186,23 @@ h1, h2, h3, h4, h5, h6 {
     .donation-amounts,
     .donation-methods {
         grid-template-columns: 1fr;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .social-icons {
+        flex-wrap: wrap;
+    }
+
+    .footer-social {
+        flex-wrap: wrap;
+    }
+
+    .footer-content {
+        gap: 2rem;
     }
 }
 
