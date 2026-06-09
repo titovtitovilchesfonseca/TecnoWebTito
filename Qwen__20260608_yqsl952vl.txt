@@ -1,0 +1,12 @@
+📂 TecnoWebTito/
+│
+├──  index.html (Página principal)
+├── 📁 css/
+│   └── styles.css (Estilos)
+├── 📁 js/
+│   └── main.js (Funcionalidad)
+├── 📁 images/
+│   ├── logo.png
+│   ├── hero-bg.jpg
+│   └── (otras imágenes)
+└── 📄 README.md

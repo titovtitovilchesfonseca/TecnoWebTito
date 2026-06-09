@@ -1,0 +1,40 @@
+
+## 🛠️ Instalación y Uso
+
+### Opción 1: GitHub Pages (Recomendado - Gratis)
+
+1. Crea una cuenta en [GitHub](https://github.com)
+2. Crea un nuevo repositorio llamado `tecnowebtito`
+3. Sube todos los archivos del proyecto
+4. Ve a Settings > Pages
+5. Selecciona la rama `main` y guarda
+6. Tu sitio estará disponible en: `https://tunombre.github.io/tecnowebtito`
+
+### Opción 2: Netlify (Gratis)
+
+1. Crea una cuenta en [Netlify](https://www.netlify.com)
+2. Arrastra la carpeta del proyecto a Netlify
+3. ¡Listo! Tu sitio estará online en segundos
+
+### Opción 3: Vercel (Gratis)
+
+1. Crea una cuenta en [Vercel](https://vercel.com)
+2. Importa tu repositorio de GitHub
+3. ¡Despliegue automático!
+
+### Opción 4: Local (Desarrollo)
+
+Simplemente abre el archivo `index.html` en tu navegador.
+
+## 🎨 Personalización
+
+### Cambiar Colores
+
+Edita las variables CSS en `css/styles.css`:
+
+```css
+:root {
+    --color-primary: #00d9ff;      /* Color principal */
+    --color-secondary: #00ff88;    /* Color secundario */
+    --color-dark: #1a1a2e;         /* Fondo oscuro */
+}
