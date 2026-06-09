@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="TecnoWebTito - Academia del Autodidacta. Cursos gratuitos de programación e IA. Rompe la barrera.">
+    <meta name="keywords" content="programación gratis, IA, cursos online, autodidacta, educación tech">
+    <meta name="author" content="Luis Vilches">
+
+    <title>TecnoWebTito | Academia del Autodidacta - Educación Tech Gratis</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navegación -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#inicio">
+                    <i class="fas fa-code"></i>
+                    <span>TecnoWeb<span class="highlight">Tito</span></span>
+                </a>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li class="nav-item"><a href="#cursos" class="nav-link">Cursos</a></li>
+                <li class="nav-item"><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li class="nav-item"><a href="#donaciones" class="nav-link">Donaciones</a></li>
+                <li class="nav-item"><a href="#contactos" class="nav-link">Contacto</a></li>
+                <li class="nav-item">
+                    <a href="https://gofundme.com/rompe-la-barrera" target="_blank" class="btn-donate">
+                        <i class="fas fa-heart"></i> Donar
+                    </a>
+                </li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <header id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title">
+                    Rompe la <span class="highlight">Barrera</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Educación tecnológica 100% gratuita para todos.
+                    Sin importar tu situación económica, aquí puedes aprender programación e IA.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#cursos" class="btn btn-primary">
+                        <i class="fas fa-graduation-cap"></i> Ver Cursos Gratis
+                    </a>
+                    <a href="#donaciones" class="btn btn-secondary">
+                        <i class="fas fa-hand-holding-heart"></i> Apoyar el Proyecto
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <i class="fas fa-users"></i>
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Estudiantes</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-book"></i>
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Cursos Gratis</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-code"></i>
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Sin Costo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- Sección Cursos -->
+    <section id="cursos" class="section cursos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestros <span class="highlight">Cursos</span></h2>
+                <p class="section-subtitle">Aprende habilidades tecnológicas de alta demanda sin gastar un centavo</p>
+            </div>
+
+            <div class="courses-grid">
+                <!-- Curso 1 -->
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="course-title">Desarrollo Web</h3>
+                    <p class="course-description">HTML, CSS, JavaScript desde cero hasta nivel avanzado. Crea páginas
+                        web profesionales.</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> HTML5 y CSS3</li>
+                        <li><i class="fas fa-check"></i> JavaScript Moderno</li>
+                        <li><i class="fas fa-check"></i> Proyectos Reales</li>
+                        <li><i class="fas fa-check"></i> Certificado Gratis</li>
+                    </ul>
+                    <a href="#" class="btn btn-course">
+                        <i class="fas fa-play-circle"></i> Empezar Curso
+                    </a>
+                </div>
+
+                <!-- Curso 2 -->
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="course-title">Inteligencia Artificial</h3>
+                    <p class="course-description">Aprende a usar IA para automatizar tareas, crear contenido y
+                        multiplicar tu productividad.</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> Prompt Engineering</li>
+                        <li><i class="fas fa-check"></i> ChatGPT y Herramientas</li>
+                        <li><i class="fas fa-check"></i> Automatización</li>
+                        <li><i class="fas fa-check"></i> Libro "Yo y la IA"</li>
+                    </ul>
+                    <a href="#" class="btn btn-course">
+                        <i class="fas fa-play-circle"></i> Empezar Curso
+                    </a>
+                </div>
+
+                <!-- Curso 3 -->
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3 class="course-title">Python para Todos</h3>
+                    <p class="course-description">Programación con Python desde cero. Ideal para principiantes sin
+                        experiencia previa.</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> Python Básico</li>
+                        <li><i class="fas fa-check"></i> Estructuras de Datos</li>
+                        <li><i class="fas fa-check"></i> Proyectos Prácticos</li>
+                        <li><i class="fas fa-check"></i> IA con Python</li>
+                    </ul>
+                    <a href="#" class="btn btn-course">
+                        <i class="fas fa-play-circle"></i> Empezar Curso
+                    </a>
+                </div>
+
+                <!-- Curso 4 -->
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="course-title">Apps Móviles</h3>
+                    <p class="course-description">Crea aplicaciones para Android y iOS. Desarrollo nativo y
+                        multiplataforma.</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> Kotlin / Swift</li>
+                        <li><i class="fas fa-check"></i> React Native</li>
+                        <li><i class="fas fa-check"></i> Publicación en Stores</li>
+                        <li><i class="fas fa-check"></i> App "TeLLevo" como ejemplo</li>
+                    </ul>
+                    <a href="#" class="btn btn-course">
+                        <i class="fas fa-play-circle"></i> Empezar Curso
+                    </a>
+                </div>
+
+                <!-- Curso 5 -->
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="course-title">Bases de Datos</h3>
+                    <p class="course-description">Aprende a diseñar y gestionar bases de datos. SQL y NoSQL desde cero.
+                    </p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> SQL Fundamental</li>
+                        <li><i class="fas fa-check"></i> MySQL / PostgreSQL</li>
+                        <li><i class="fas fa-check"></i> MongoDB</li>
+                        <li><i class="fas fa-check"></i> Diseño de Esquemas</li>
+                    </ul>
+                    <a href="#" class="btn btn-course">
+                        <i class="fas fa-play-circle"></i> Empezar Curso
+                    </a>
+                </div>
+
+                <!-- Curso 6 -->
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="course-title">Emprendimiento Tech</h3>
+                    <p class="course-description">Cómo crear tu propio negocio tecnológico. De la idea al producto
+                        final.</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> Validación de Ideas</li>
+                        <li><i class="fas fa-check"></i> MVP y Prototipos</li>
+                        <li><i class="fas fa-check"></i> Marketing Digital</li>
+                        <li><i class="fas fa-check"></i> Casos de Éxito Reales</li>
+                    </ul>
+                    <a href="#" class="btn btn-course">
+                        <i class="fas fa-play-circle"></i> Empezar Curso
+                    </a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">
+                    <i class="fas fa-icono"></i>
+                </div>
+                <h3 class="course-title">Nombre del Curso</h3>
+                <p class="course-description">Descripción del curso...</p>
+                <!-- Más contenido -->
+            </div>
+
+            <div class="text-center">
+                <a href="#" class="btn btn-primary btn-large">
+                    <i class="fas fa-th"></i> Ver Todos los Cursos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="section servicios">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestros <span class="highlight">Servicios</span></h2>
+                <p class="section-subtitle">Más que cursos, te ofrecemos herramientas para transformar tu vida</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Servicio 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3 class="service-title">Mentoría Personalizada</h3>
+                    <p class="service-description">Acompañamiento uno a uno con expertos. Resolvemos tus dudas y te
+                        guiamos en tu camino.</p>
+                    <div class="service-price">
+                        <span class="price-free">Gratis</span>
+                        <span class="price-note">Para estudiantes activos</span>
+                    </div>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="service-title">Comunidad Activa</h3>
+                    <p class="service-description">Únete a nuestra comunidad de miles de estudiantes. Networking, apoyo
+                        mutuo y colaboraciones.</p>
+                    <div class="service-price">
+                        <span class="price-free">Gratis</span>
+                        <span class="price-note">Acceso ilimitado</span>
+                    </div>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="service-title">Certificados</h3>
+                    <p class="service-description">Obtén certificados al completar cada curso. Valida tus conocimientos
+                        y mejora tu CV.</p>
+                    <div class="service-price">
+                        <span class="price-free">Gratis</span>
+                        <span class="price-note">Digital y verificable</span>
+                    </div>
+                </div>
+
+                <!-- Servicio 4 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="service-title">Bolsa de Trabajo</h3>
+                    <p class="service-description">Accede a ofertas de trabajo exclusivas para nuestros estudiantes.
+                        Conectamos talento con oportunidades.</p>
+                    <div class="service-price">
+                        <span class="price-free">Gratis</span>
+                        <span class="price-note">Para graduados</span>
+                    </div>
+                </div>
+
+                <!-- Servicio 5 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 class="service-title">Recursos Gratuitos</h3>
+                    <p class="service-description">Libros, guías, plantillas, código fuente y más. Todo el material que
+                        necesitas para aprender.</p>
+                    <div class="service-price">
+                        <span class="price-free">Gratis</span>
+                        <span class="price-note">Descarga ilimitada</span>
+                    </div>
+                </div>
+
+                <!-- Servicio 6 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="service-title">Proyectos Reales</h3>
+                    <p class="service-description">Trabaja en proyectos reales desde el día 1. Construye tu portafolio
+                        mientras aprendes.</p>
+                    <div class="service-price">
+                        <span class="price-free">Gratis</span>
+                        <span class="price-note">Portafolio profesional</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Donaciones -->
+    <section id="donaciones" class="section donaciones">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Apoya el <span class="highlight">Proyecto</span></h2>
+                <p class="section-subtitle">Ayúdanos a mantener la educación tech 100% gratuita para todos</p>
+            </div>
+
+            <div class="donation-content">
+                <div class="donation-info">
+                    <h3 class="donation-title">¿Por qué necesitamos tu apoyo?</h3>
+                    <p class="donation-text">
+                        La Academia del Autodidacta es <strong>100% gratuita</strong> para los estudiantes, pero
+                        mantenerla tiene un costo.
+                        Cada mes necesitamos cubrir gastos de hosting, herramientas de software, creación de contenido y
+                        más.
+                    </p>
+                    <p class="donation-text">
+                        Sin tu apoyo, no podemos seguir ofreciendo educación de calidad sin costo.
+                        Tu donación, por pequeña que sea, nos ayuda a mantener las puertas abiertas para miles de
+                        personas
+                        que, como nosotros, no tienen acceso a la educación tradicional.
+                    </p>
+
+                    <div class="donation-goals">
+                        <h4 class="goals-title">Meta: $5,000 USD</h4>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 35%"></div>
+                        </div>
+                        <div class="progress-info">
+                            <span>$1,750 recaudados</span>
+                            <span>$3,250 faltantes</span>
+                        </div>
+                    </div>
+
+                    <div class="donation-breakdown">
+                        <h4 class="breakdown-title">¿En qué se usará tu donación?</h4>
+                        <ul class="breakdown-list">
+                            <li><i class="fas fa-server"></i> Hosting y dominio (1 año): $50.000</li>
+                            <li><i class="fas fa-microphone-alt"></i> Equipo de producción: $100.000</li>
+                            <li><i class="fas fa-video"></i> Creación de 10 cursos nuevos: $100.000</li>
+                            <li><i class="fas fa-graduation-cap"></i> Fondo de becas (10 estudiantes): $1.000.000</li>
+                            <li><i class="fas fa-shield-alt"></i> Fondo de emergencia: $50.000</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="donation-options">
+                    <h3 class="donation-options-title">Formas de Donar</h3>
+
+                    <div class="donation-amounts">
+                        <button class="amount-btn" data-amount="1000">
+                            <span class="amount">$1000</span>
+                            <span class="amount-desc">Café</span>
+                        </button>
+                        <button class="amount-btn" data-amount="
+                        ">
+                            <span class="amount">$2000</span>
+                            <span class="amount-desc">Libro "Yo y la IA"</span>
+                        </button>
+                        <button class="amount-btn active" data-amount="3000">
+                            <span class="amount">$3000</span>
+                            <span class="amount-desc">Mentoría grupal</span>
+                        </button>
+                        <button class="amount-btn" data-amount="5000">
+                            <span class="amount">$5000
+
+                            </span>
+                            <span class="amount-desc">Mentoría personal</span>
+                        </button>
+                        <button class="amount-btn" data-amount="100">
+                            <span class="amount">$50.000</span>
+                            <span class="amount-desc">Patrocinador</span>
+                        </button>
+                    </div>
+
+                    <div class="donation-methods">
+                        <a href="https://gofundme.com/rompe-la-barrera" target="_blank" class="method-btn gofundme">
+                            <i class="fas fa-heart"></i> GoFundMe
+                        </a>
+                        <button class="method-btn paypal">
+                            <i class="fab fa-paypal"></i> PayPal
+                        </button>
+                        <button class="method-btn transfer">
+                            <i class="fas fa-university"></i> Transferencia
+                        </button>
+                        <button class="method-btn crypto">
+                            <i class="fab fa-bitcoin"></i> Criptomonedas
+                        </button>
+                    </div>
+
+                    <div class="donation-perks">
+                        <h4 class="perks-title">Beneficios según tu aporte:</h4>
+                        <ul class="perks-list">
+                            <li><i class="fas fa-check-circle"></i> <strong>$5+:</strong> Tu nombre en el Muro de Héroes
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> <strong>$15+:</strong> Libro "Yo y la IA" digital
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> <strong>$30+:</strong> Mentoría grupal mensual</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>$50+:</strong> 1 hora de mentoría personal
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> <strong>$100+:</strong> Patrocinador oficial + logo
+                                en web</li>
+                        </ul>
+                    </div>
+
+                    <a href="https://gofundme.com/rompe-la-barrera" target="_blank"
+                        class="btn btn-primary btn-large btn-donate-main">
+                        <i class="fas fa-heart"></i> Donar Ahora
+                    </a>
+
+                    <p class="donation-note">
+                        <i class="fas fa-shield-alt"></i>
+                        Transparencia total: Publicamos reportes mensuales de cómo se usa cada centavo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contactos" class="section contactos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contáctanos</h2>
+                <p class="section-subtitle">¿Tienes preguntas? Estamos aquí para ayudarte</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-title">Información de Contacto</h3>
+                    <p class="contact-text">
+                        Si tienes dudas sobre los cursos, el proyecto o cómo puedes ayudar,
+                        no dudes en escribirnos. Te responderemos lo antes posible.
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>contacto@tecnowebtito.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Ubicación</h4>
+                                <p>Online - Disponible mundialmente</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Horario de Respuesta</h4>
+                                <p>Lunes a Viernes - 24-48 horas</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h4>Síguenos en Redes Sociales</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-icon" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-icon" target="_blank">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <h3 class="form-title">Envíanos un Mensaje</h3>
+
+                        <div class="form-group">
+                            <label for="name">Nombre completo *</label>
+                            <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Correo electrónico *</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Asunto *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Selecciona un asunto</option>
+                                <option value="cursos">Información sobre cursos</option>
+                                <option value="donaciones">Donaciones y apoyo</option>
+                                <option value="mentorias">Mentorías personalizadas</option>
+                                <option value="proyectos">Proyectos y colaboraciones</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensaje *</label>
+                            <textarea id="message" name="message" rows="5" required
+                                placeholder="Escribe tu mensaje aquí..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large btn-submit">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                        </button>
+
+                        <p class="form-note">
+                            <i class="fas fa-info-circle"></i>
+                            Te responderemos en un plazo de 24-48 horas hábiles.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">
+                        <i class="fas fa-code"></i>
+                        TecnoWeb<span class="highlight">Tito</span>
+                    </h3>
+                    <p class="footer-text">
+                        Academia del Autodidacta. Educación tecnológica 100% gratuita
+                        para romper la barrera del acceso a la educación.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#cursos">Cursos</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#donaciones">Donaciones</a></li>
+                        <li><a href="#contactos">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Cursos Populares</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Desarrollo Web</a></li>
+                        <li><a href="#">Inteligencia Artificial</a></li>
+                        <li><a href="#">Python</a></li>
+                        <li><a href="#">Apps Móviles</a></li>
+                        <li><a href="#">Emprendimiento Tech</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p class="footer-text">Suscríbete para recibir actualizaciones y nuevos cursos.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 TecnoWebTito - Academia del Autodidacta. Todos los derechos reservados.</p>
+                <p class="footer-credits">
+                    Creado con <i class="fas fa-heart"></i> por Luis Vilches y la comunidad.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón Volver Arriba -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="TecnoWebTito\main.js"></script>
+</body>
+
+</html>
